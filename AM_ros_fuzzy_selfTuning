@@ -113,7 +113,7 @@ void setup() {
   nh.subscribe(sub);
   nh.subscribe(suby);
     nh.spinOnce();
-  delay(1000);
+  delay(100);
   //---------------------------------setup hard ware----------------------------------
   pinMode(M1_l, OUTPUT);
   pinMode(M2_l, OUTPUT);
