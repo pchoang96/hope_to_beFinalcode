@@ -342,6 +342,10 @@ ISR(TIMER1_OVF_vect)
   
   if (l_out>= 255) l_out = 255;
   if (r_out>= 255) r_out = 255;
+  
+  if (l_out<= 255) l_out = 0;
+  if (r_out<= 255) r_out = 0;
+  
   pwmOut(l_out,r_out,l_dir,r_dir);
   l_p=0;
   r_p=0;
